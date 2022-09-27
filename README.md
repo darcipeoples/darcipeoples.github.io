@@ -117,7 +117,8 @@ This is a face-grain cutting board, so I'm not comfortable cutting on it, but it
 Reddit BDI is a webapp to estimate a social media user's depression severity using their post & comment history. The app fetches the user's past comments and posts and feeds these through an ML model to predict responses to the Beck's Depression Inventory[^2] and thus estimate their corresponding depression severity. The model was trained on the data of 90 users provided by the CLEF eRisk 2021 Workshop. The site also provides mental health resources & allows users to submit their true BDI results for potential improvement of the model. The app was created using React, Python, Flask, TensorFlow, pushshift.io, and the Google Cloud Platform.
 
 **Visit the site:** [https://reddit-bdi.uc.r.appspot.com](https://reddit-bdi.uc.r.appspot.com)
-**Project report:** [reddit-bdi-report.pdf]('./data/reddit-bdi-report.pdf')
+
+**Project report:** [reddit-bdi-report.pdf](./data/reddit-bdi-report.pdf)
 
 ![Reddit BDI](./data/reddit-bdi.png)
 
@@ -128,6 +129,7 @@ Reddit BDI is a webapp to estimate a social media user's depression severity usi
 [grok.date]((https://grokdating.web.illinois.edu)) is a dating site intended for "geeks" (gamers, redditors, coders, etc.). It lets users import profile data from other social media (e.g. their subreddits) for easier account setup and transparent interest sharing. The app also has interest-based icebreakers and direct messages. The app was built using React, the Reddit API, Firestore, and cPanel.
 
 **Visit the site:** [https://grokdating.web.illinois.edu](https://grokdating.web.illinois.edu)
+
 **About the site (video):** [https://www.youtube.com/watch?v=FZoiCHPYWBE](https://www.youtube.com/watch?v=FZoiCHPYWBE)
 
 ![grok.date](./data/grok-date.png)
@@ -137,6 +139,7 @@ Reddit BDI is a webapp to estimate a social media user's depression severity usi
 In this narrative data visualization, I explore how weather, time of year, and time of day impact London bike share frequency. I also created a multiple linear regression model to predict bike sharing frequency based on these seasonal conditions, providing potentially useful insights for bike & scooter sharing companies and transport authorities.
 
 **Narrative Visualization:** https://darcipeoples.com/bike-sharing-viz/
+
 **Data Analysis Report:** [bike-share-report.pdf](./data/bike-share-report.pdf)
 
 ![Bike Sharing visualization](./data/bike-sharing-viz.png)
