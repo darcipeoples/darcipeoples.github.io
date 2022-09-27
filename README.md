@@ -138,7 +138,7 @@ Reddit BDI is a webapp to estimate a social media user's depression severity usi
 
 In this narrative data visualization, I explore how weather, time of year, and time of day impact London bike share frequency. I also created a multiple linear regression model to predict bike sharing frequency based on these seasonal conditions, providing potentially useful insights for bike & scooter sharing companies and transport authorities.
 
-**Narrative Visualization:** https://darcipeoples.com/bike-sharing-viz/
+**Narrative Visualization:** <a href="https://darcipeoples.com/bike-sharing-viz/" target="_blank">https://darcipeoples.com/bike-sharing-viz/</a>
 
 **Data Analysis Report:** <a href="./data/bike-share-report.pdf" target="_blank">bike-share-report.pdf</a>
 
