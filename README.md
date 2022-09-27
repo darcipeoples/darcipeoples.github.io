@@ -8,7 +8,7 @@ I created a Python bot to automatically beat the game Operation Gumball. Operati
 
 ![Operation Gumball game](./data/gumball-game.gif)
 
-[^1]: https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf
+[^1]: <a href="https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf" target="_blank">https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf</a> 
 
 ### Logic Puzzle Solver
 I created a Python script that's capable of solving any Puzzle Baron logic puzzle. A logic puzzle provides a set of clues and categories. The player must use logical deduction to determine what entities correspond to what categories. To use the script, the user must transcribe each clue. E.g. "Opal played 1 game before Gail" turns into `[Player.Opal].games = [Player.Gail].games - 1`. And also provide units for any ordinal categories so these strings can be converted to numbers (e.g. "$5 thousand" --> `5000`).
@@ -116,21 +116,21 @@ This is a face-grain cutting board, so I'm not comfortable cutting on it, but it
 
 Reddit BDI is a webapp to estimate a social media user's depression severity using their post & comment history. The app fetches the user's past comments and posts and feeds these through an ML model to predict responses to the Beck's Depression Inventory[^2] and thus estimate their corresponding depression severity. The model was trained on the data of 90 users provided by the CLEF eRisk 2021 Workshop. The site also provides mental health resources & allows users to submit their true BDI results for potential improvement of the model. The app was created using React, Python, Flask, TensorFlow, pushshift.io, and the Google Cloud Platform.
 
-**Visit the site:** [https://reddit-bdi.uc.r.appspot.com](https://reddit-bdi.uc.r.appspot.com)
+**Visit the site:** <a href="https://reddit-bdi.uc.r.appspot.com" target="_blank">https://reddit-bdi.uc.r.appspot.com</a>
 
-**Project report:** [reddit-bdi-report.pdf](./data/reddit-bdi-report.pdf)
+**Project report:** <a href="./data/reddit-bdi-report.pdf" target="_blank">reddit-bdi-report.pdf</a>
 
 ![Reddit BDI](./data/reddit-bdi.png)
 
-[^2]: (Beck, A. T., Steer, R. A., & Brown, G. (1996). _Beck Depression Inventory–II_ [Database record]. APA PsycTests. https://doi.org/10.1037/t00742-000)
+[^2]: (Beck, A. T., Steer, R. A., & Brown, G. (1996). _Beck Depression Inventory–II_ [Database record]. APA PsycTests. <a href="https://doi.org/10.1037/t00742-000" target="_blank">https://doi.org/10.1037/t00742-000</a>)
 
 ### grok.date
 
-[grok.date]((https://grokdating.web.illinois.edu)) is a dating site intended for "geeks" (gamers, redditors, coders, etc.). It lets users import profile data from other social media (e.g. their subreddits) for easier account setup and transparent interest sharing. The app also has interest-based icebreakers and direct messages. The app was built using React, the Reddit API, Firestore, and cPanel.
+<a href="https://grokdating.web.illinois.edu" target="_blank">grok.date</a> is a dating site intended for "geeks" (gamers, redditors, coders, etc.). It lets users import profile data from other social media (e.g. their subreddits) for easier account setup and transparent interest sharing. The app also has interest-based icebreakers and direct messages. The app was built using React, the Reddit API, Firestore, and cPanel.
 
-**Visit the site:** [https://grokdating.web.illinois.edu](https://grokdating.web.illinois.edu)
+**Visit the site:** <a href="https://grokdating.web.illinois.edu" target="_blank">https://grokdating.web.illinois.edu</a>
 
-**About the site (video):** [https://www.youtube.com/watch?v=FZoiCHPYWBE](https://www.youtube.com/watch?v=FZoiCHPYWBE)
+**About the site (video):** <a href="https://www.youtube.com/watch?v=FZoiCHPYWBE" target="_blank">https://www.youtube.com/watch?v=FZoiCHPYWBE</a>
 
 ![grok.date](./data/grok-date.png)
 
@@ -140,7 +140,7 @@ In this narrative data visualization, I explore how weather, time of year, and t
 
 **Narrative Visualization:** https://darcipeoples.com/bike-sharing-viz/
 
-**Data Analysis Report:** [bike-share-report.pdf](./data/bike-share-report.pdf)
+**Data Analysis Report:** <a href="./data/bike-share-report.pdf" target="_blank">bike-share-report.pdf</a>
 
 ![Bike Sharing visualization](./data/bike-sharing-viz.png)
 
