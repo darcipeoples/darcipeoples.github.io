@@ -11,13 +11,19 @@ I created a Python bot to automatically beat the game Operation Gumball. Operati
 [^1]: <a href="https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf" target="_blank">https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf</a> 
 
 ### Logic Puzzle Solver
-I created a Python script that's capable of solving any Puzzle Baron logic puzzle. A logic puzzle provides a set of clues and categories. The player must use logical deduction to determine what entities correspond to what categories. To use the script, the user must transcribe each clue. E.g. "Opal played 1 game before Gail" turns into `[Player.Opal].games = [Player.Gail].games - 1`. And also provide units for any ordinal categories so these strings can be converted to numbers (e.g. "$5 thousand" --> `5000`).
+I created a Python program capable of solving any Puzzle Baron logic puzzle. A logic puzzle provides a set of clues and categories. The player must use logical deduction to determine what entities correspond to what categories. To use the script, the user must transcribe each clue. E.g. "Opal played 1 game before Gail" turns into `[Player.Opal].games = [Player.Gail].games - 1`. And also provide units for any ordinal categories so these strings can be converted to numbers (e.g. "$5 thousand" --> `5000`).
 
-Future plans for the project include adding an online UI for ease of use. And perhaps to automatically transcribe clues into a format the program can understand using heuristics and/or NLP derived from the 30k+ puzzles already scraped from the site.
+Future plans for the project include adding an online UI for ease of use.
 
-A second, simpler bot can solve any puzzle up to 4x5 in size given a puzzle URL. It does this by brute force checking of board hashes against the solution hash given in the game html. This solver requires only the URL of the puzzle and no transcription of puzzles clues.
+A second, simpler bot can solve any puzzle up to 4x5 in size, given the puzzle URL. It does this by brute force checking board hashes against the solution hash given in the game HTML. This solver requires only the URL of the puzzle and no transcription of puzzles clues.
 
 ![Logic Puzzle game](./data/logic-game.png)
+
+I've extended the bot to be able to automatically start & play games. It automatically starts games, scrapes the clues & categories from the HTML, translates them into clue types & values the program can understand, iteratively & recursively applies clue logic (similarly to a human, see ["How to Solve a Logic Puzzle"](https://logic.puzzlebaron.com/how-to-solve-a-logic-puzzle.php)), and submits the solution with Selenium.
+
+To automatically parse the clues into something the program can understand, the bot uses heuristics derived from 30k+ puzzles scraped from the site.
+
+![Logic Puzzle game auto solver](./data/logic-game-auto.gif)
 
 ### Wordle Solver
 
@@ -46,9 +52,13 @@ I wrote a bot to spit out possible solutions for a given a partial word clue (e.
 
 Wordtwist is a Puzzle Baron game in which players are given a grid of letters and must create words by chaining adjacent letters. My Python solver takes in the text board and outputs the list of words, ranked in descending order of points. It finds these solutions via depth-first search (DFS) of the board and backtracking when a given partial path has no more possible words.
 
+![Wordtwist game](./data/wordtwist-game-manual.gif)
+
 A second, more cheaty (and arguably, less fun) solver takes advantage of the underlying exposed APIs to simply fetch the list of solution words for a given board.
 
-![Wordtwist game](./data/wordtwist-game.gif)
+I extended the program to be able to automatically & repeatedly start and play games using Selenium.
+
+![Wordtwist game](./data/wordtwist-game-auto.gif)
 
 ### "Where's Wacky" (Memory Card Game) bot
 
@@ -64,9 +74,13 @@ In "Booger Gets an A", the player must click tiles that add to a given sum to el
 
 ### "Circuits" (network puzzle) solver
 
-"Circuits" is a Puzzle Baron network puzzle in which you try to connect all lightbulbs to the central battery (without any cycles) by rotating the grid cells. My Python bot takes as input a board configuration and outputs the rotations to perform on each cell. It finds this solution by recursively applying restrictions of each cell's neighbors (e.g. to start, a wire end shouldn't point at an edge) until there is only one possible rotation per cell. During the search we also ensure there will only be one connected component (so all bulbs will touch battery) and that there are no cycles.
+"Circuits" is a Puzzle Baron network puzzle in which you try to connect all lightbulbs to the central battery (without any cycles or loose ends) by rotating the grid cells. My Python bot takes a board configuration as input and outputs the rotations to perform on each cell. It finds this solution by recursively applying restrictions of each cell's neighbors (e.g. to start, a wire end shouldn't point at an edge) until there is only one possible rotation per cell. If there is still more than one possibility, it chooses one & backtracks if that fails (e.g. creates cycle). During the search we also ensure there will only be one connected component (so all bulbs will touch battery) and that there are no cycles.
 
-![Circuits game](./data/circuits-game.gif)
+![Circuits game](./data/circuits-game-manual.gif)
+
+I've updated the bot to use Selenium to automaticall start & play games. It searches the game HTML for the starting board state, solves the puzzle (as before), and automatically submits the solution. It is substantially faster than any human. It could be faster by just sending web requests, but using the UI is way more fun (the same goes for many of the other games)!
+
+![Circuits game](./data/circuits-game-auto.gif)
 
 ### "Ringers" solver
 I wrote a bot to solve the "Ringers" word puzzle. My first attempt at the program used brute force. Still, I was able to write & run the program in less time than it took to solve 5 such puzzles manually. I've since updated the algoritm to use backtracking and it can now generate and solve a puzzle of any size in sub-second time (up to puzzles with 100 words of length 20).
@@ -79,6 +93,10 @@ I wrote a bot to solve the "Ringers" word puzzle. My first attempt at the progra
 
 **Example solution:**
 FANCY, LLAMA, DOUBT, BROWN, SALAD
+
+Here's a larger board generated using the program. The solution is 6 words that are each 12 letters long. Can you solve it?
+
+<img src="./data/ringers-large-generated.png" alt="Ringers game" height="300" width="300"/>
 
 ## Woodworking
 
@@ -151,4 +169,10 @@ This program takes as input an image to turn into pixel art and an available col
 <img src="./data/pixel-art-out.png" alt="Pixel Art Generator output" width="400"/>
 
 ![Pixel Art Generator output](./data/pixel-art-dist.png)
+
+### 2048 Clone
+This is a clone of the mobile app "2048". It was made with the Processing 3 language. Care had to be taken in how the tiles merge together. For example, merging down a stack of 3 tiles must merge the bottom two. And a stack of 4 must merge and then stack next to each other to prevent unintentional gaps.
+
+<img src="./data/2048-game.png" alt="2048 Game" width="400"/>
+<img src="./data/2048-game-over.png" alt="2048 Game Over" width="400"/>
 
