@@ -46,7 +46,6 @@ Using much of the same tactics as the Operation Gumball solver, my Wordle bot ca
 
 Future work could include adding a UI instead of command line interface and utilizing Information Theory to reduce the number of average guesses required.
 
-<div styles="display: inline-block;">
 <img src="./data/wordle-game.png" alt="Wordle game" width="400"/>
 <img src="./data/wordle-bot.png" alt="Wordle bot" width="400"/>
 
