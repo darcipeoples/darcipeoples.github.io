@@ -218,7 +218,7 @@ This is a clone of the mobile app "2048". It was made with the Processing 3 lang
 <!-- Look through PSC to find others -->
 
 <!-- TODO: # School Projects -->
-<!-- MapleJuice, Crackerjack, Piazza Improvements (class scraper), Zombie VR game, Memory Game, Stronghold finder -->
+<!-- MapleJuice, Crackerjack, Piazza Improvements (class scraper), Zombie VR game, Memory Game, Stronghold finder, Maze Generator/Solver, Gin Rummy Bot, Adventure Game, SPIMbot, CPU from scratch, Apriori Search Algo, Chatroom, AI Robot Arm, Naive Bayes Handwriting recognition, Programming Language from scratch, Distributed File System, Drain -->
 <!-- Look through files to find others -->
 
 <!-- TODO: # Personal projects -->
