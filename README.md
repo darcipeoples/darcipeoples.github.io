@@ -11,11 +11,18 @@ Hello! I'm Darci Peoples (she/her) 👋
 
 ## Game Bots & Solvers
 
+<!-- TODO: Blurb about why I write so many solvers -->
+
+<!-- TODO: ## MakeAnything SKEWBITS Solver -->
+<!-- TODO: ## Game Pigeon Tanks Helper -->
+<!-- TODO: ## Card Game League Stats -->
+
 ### "Operation Gumball" (Mastermind) Bot
 
 I created a Python bot to automatically beat the game Operation Gumball. Operation gumball is a code guessing game (similar to Mastermind and Wordle). The bot makes use of Donald Knuth's five guess minimax Mastermind algorithm[^1], adapted for Operation Gumball. The bot is completely autonomous, needing no human input. It is able to input mouse and keyboard movements and interpret screen output to play an entire 30 level game.
 
-<!-- (TODO: make gifs higher definition, there's not much harm in doing so) -->
+<!-- TODO: mention how I pre-calculated the perfect solution with Info Theory & how that sped up solving -->
+<!-- TODO: Mention that I've been worrking on it since 2017 -->
 
 <img src="./data/gumball-game.gif" alt="Operation Gumball game" width="800"/>
 
@@ -24,13 +31,17 @@ I created a Python bot to automatically beat the game Operation Gumball. Operati
 ### Logic Puzzle Solver
 I created a Python program capable of solving any Puzzle Baron logic puzzle. A logic puzzle provides a set of clues and categories. The player must use logical deduction to determine what entities correspond to what categories. To use the script, the user must transcribe each clue. E.g. "Opal played 1 game before Gail" turns into `[Player.Opal].games = [Player.Gail].games - 1`. And also provide units for any ordinal categories so these strings can be converted to numbers (e.g. "$5 thousand" --> `5000`).
 
-<!-- (TODO: better puzzle description) -->
+<!-- TODO: Better puzzle description -->
 
 Future plans for the project include adding an online UI for ease of use.
 
+<!-- TODO: Mention that I could use ChatGPT to parse the clues instead of heuristics -->
+<!-- TODO: Mention that I could use Prolog -->
+<!-- TODO: Mention that I'm working on a React or plain HTML front-end -->
+
 A second, simpler bot can solve any puzzle up to 4x5 in size, given the puzzle URL. It does this by brute force checking board hashes against the solution hash given in the game HTML. This solver requires only the URL of the puzzle and no transcription of puzzles clues.
 
-<!-- (TODO: repl link) -->
+<!-- TODO: Repl link -->
 
 <img src="./data/logic-game.png" alt="Logic Puzzle game" width="800"/>
 
@@ -49,7 +60,7 @@ Future work could include adding a UI instead of command line interface and util
 <img src="./data/wordle-game.png" alt="Wordle game" width="400"/>
 <img src="./data/wordle-bot.png" alt="Wordle bot" width="400"/>
 
-<!-- (TODO: repl link) -->
+<!-- TODO: repl link -->
 
 ### "Draw My Thing" (Skribbl.io, Sketchful.io) Solver
 
@@ -109,7 +120,7 @@ I wrote a bot to solve the "Ringers" word puzzle. My first attempt at the progra
 
 <img src="./data/ringers-game.png" alt="Ringers game" width="400"/>
 
-<!-- (TODO: create repl & add link?) -->
+<!-- TODO: create repl & add link? -->
 
 **Example solution:**
 FANCY, LLAMA, DOUBT, BROWN, SALAD
@@ -118,7 +129,7 @@ Here's a larger board generated using the program. The solution is 6 words that 
 
 <img src="./data/ringers-large-generated.png" alt="Ringers game" width="400"/>
 
-<!-- (Answer: UNRESTRAINED, MALFORMATION, MISDEMEANOUR, CENTEREDNESS, FLAMMABILITY, YOUTHFULNESS) -->
+<!-- Answer: UNRESTRAINED, MALFORMATION, MISDEMEANOUR, CENTEREDNESS, FLAMMABILITY, YOUTHFULNESS -->
 
 ## Woodworking
 
@@ -150,11 +161,9 @@ This is a face-grain cutting board, so I'm not comfortable cutting on it, but it
 
 <img src="./data/cutting-board.jpg" alt="Cutting board" width="800"/>
 
-<!-- (TODO: My 1st Bowl) -->
-
 ## Other Programming Projects
 
-<!-- (TODO: videos/gifs/screenshots, demo links, & code links) -->
+<!-- TODO: videos/gifs/screenshots, demo links, & code links -->
 
 ### Reddit BDI
 
@@ -184,6 +193,8 @@ In this narrative data visualization, I explore how weather, time of year, and t
 
 **Narrative Visualization:** <a href="https://darcipeoples.com/bike-sharing-viz/" target="_blank">https://darcipeoples.com/bike-sharing-viz/</a>
 
+<!-- TODO: Elaborate on the STAT 420 final report -->
+
 **Data Analysis Report:** <a href="./data/bike-share-report.pdf" target="_blank">bike-share-report.pdf</a>
 
 <img src="./data/bike-sharing-viz.png" alt="Bike Sharing visualization" width="800"/>
@@ -202,21 +213,38 @@ This is a clone of the mobile app "2048". It was made with the Processing 3 lang
 <img src="./data/2048-game.png" alt="2048 Game" width="400"/>
 <img src="./data/2048-game-over.png" alt="2048 Game Over" width="400"/>
 
-<!-- (TODO: School Projects: Crackerjack, Piazza Improvements, Zombie VR game, interesting MPs?) -->
+<!-- TODO: # Meta Stuff -->
+<!-- Bii, Taxonomy Tooling, Curation Tooling, Node Systems & Storage -->
+<!-- Look through PSC to find others -->
 
-<!-- (TODO: Personal projects during school: CBTF scheduler, Stronghold finder, MapleJuice, Fishy, hangman (tiny), anagrams (tiny), wordhunt (nearly same as wordtwist)) -->
+<!-- TODO: # School Projects -->
+<!-- MapleJuice, Crackerjack, Piazza Improvements (class scraper), Zombie VR game, Memory Game, Stronghold finder -->
+<!-- Look through files to find others -->
 
-<!-- (TODO: Look through all folders/drives/githubs/linkedin for projects, etc.) -->
+<!-- TODO: # Personal projects -->
+<!-- Knockoffs: CalicoSpin (Stardew), Fishy, Stacker, FlappyBird, Hangman, Hi-Lo -->
+<!-- Solvers: 3D Block Puzzle, Anagrams, WordHunt, Billiard Rack, Up The River Best Bets, Spelling Bee, Quartiles, Year Puzzle -->
+<!-- Other: Sauceathon / Line Follower, CBTF scheduler, License Plate Availability Checker, Password Generator -->
+<!-- Webkinz: Lunch Letters, Atlantiles, Goober's Lab, Jellybean Challenge -->
+<!-- Puzzle Baron: Number Grids -->
 
-<!-- (TODO: Upload resume) -->
+<!-- TODO: # Woodworking: Kumiko grid, bowl -->
 
-<!-- (TODO: Add resume sections:) -->
+<!-- TODO: Look through all folders/drives/github for projects, etc. -->
+<!-- Already checked personal projects on Mac. Still need to check school projects & GDrives. -->
 
-<!-- (TODO: Education - GPA, degrees) -->
-<!-- (TODO: Jobs: E.g. FB, SF, RA, TA, CA, Sug Mama) -->
-<!-- (TODO: Languages: E.g. Python) -->
-<!-- (TODO: Courses: E.g. Security) -->
-<!-- (TODO: Achievements: E.g. Dean's list, list of teachers ranked as excellent, WCS, Mu Alpha Theta, His Hon Soc, IL Tech Assoc Challenge, peer leadership) -->
-<!-- (TODO: Leadership: E.g. WCS, GWC, BAAC, FBLA) -->
+<!-- TODO: Upload resume -->
 
-<!-- (TODO: Travel section? Iceland, Hawaii) -->
+<!-- TODO: Add resume sections: -->
+
+<!-- TODO: Education - GPA, degrees -->
+<!-- TODO: Jobs: E.g. FB, SF, RA, TA, CA, Sug Mama -->
+<!-- TODO: Languages: E.g. Python -->
+<!-- TODO: Courses: E.g. Security -->
+<!-- TODO: Achievements: E.g. Dean's list, list of teachers ranked as excellent, WCS, Mu Alpha Theta, His Hon Soc, IL Tech Assoc Challenge, peer leadership -->
+<!-- TODO: Leadership: E.g. WCS, GWC, BAAC, FBLA -->
+
+<!-- TODO: # Travel? Iceland, Hawaii -->
+<!-- TODO: # 3D printing? -->
+
+<!-- TODO: Make gifs higher resolution -->
