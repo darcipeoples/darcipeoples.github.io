@@ -1,11 +1,9 @@
-# Darci Peoples
-
 <img src="./data/profile-picture.png" alt="Darci Peoples" width="400"/>
 
 Hello! I'm Darci Peoples (she/her) 👋
 
 - 👩🏽‍💻 Software Engineer at Meta
-- 🎓 Masters of Computer Science from UIUC
+- 🎓 Masters of Computer Science from University of Illinois, Urbana-Champaign (UIUC)
 - 🤝 Connect with me on [LinkedIn](https://www.linkedin.com/in/darcipeoples/)
 - 💻 View project source code on [GitHub](https://github.com/darcipeoples)
 
